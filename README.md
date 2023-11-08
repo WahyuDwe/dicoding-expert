@@ -1,4 +1,5 @@
 # Menjadi Android Developer Expert
+### use Jdk 11
 
 Silakan lihat branch untuk berkas atau source code yang diinginkan.
 
