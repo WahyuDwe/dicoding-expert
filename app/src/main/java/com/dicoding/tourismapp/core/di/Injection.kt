@@ -9,7 +9,6 @@ import com.dicoding.tourismapp.core.data.TourismRepository
 import com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource
 import com.dicoding.tourismapp.core.data.source.remote.network.ApiConfig
 import com.dicoding.tourismapp.core.utils.AppExecutors
-import com.dicoding.tourismapp.core.utils.JsonHelper
 import com.dicoding.tourismapp.domain.repository.ITourismRepository
 import com.dicoding.tourismapp.domain.usecase.TourismInteractor
 import com.dicoding.tourismapp.domain.usecase.TourismUseCase
