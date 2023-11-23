@@ -20,7 +20,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.lang.Exception
 
-class RemoteDataSource private constructor(private val apiService: ApiService) {
+class RemoteDataSource(private val apiService: ApiService) {
 
     fun getAllTourism(): Flow<ApiResponse<List<TourismResponse>>> {
         val resultData = MutableLiveData<ApiResponse<List<TourismResponse>>>()
@@ -40,16 +40,6 @@ class RemoteDataSource private constructor(private val apiService: ApiService) {
                 Log.e("RemoteDataSource", e.toString())
             }
         }.flowOn(Dispatchers.IO)
-    }
-
-    companion object {
-        @Volatile
-        private var instance: RemoteDataSource? = null
-
-        fun getInstance(service: ApiService): RemoteDataSource =
-            instance ?: synchronized(this) {
-                instance ?: RemoteDataSource(service)
-            }
     }
 }
 
