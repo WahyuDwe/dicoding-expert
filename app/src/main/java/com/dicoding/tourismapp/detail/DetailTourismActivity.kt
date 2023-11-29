@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.dicoding.tourismapp.R
 import com.dicoding.tourismapp.databinding.ActivityDetailTourismBinding
-import com.dicoding.tourismapp.domain.model.Tourism
+import com.dicoding.tourismapp.core.domain.model.Tourism
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class DetailTourismActivity : AppCompatActivity() {
